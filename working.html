@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colorful Box Challenge</title>
+  <!-- Include the Tailwind CSS CDN link -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .primary-box {
+      background-color: #410b13; /* Primary Color: Dark Red */
+    }
+  </style>
+  <script>
+    function changeBackgroundColor(color) {
+      document.body.style.backgroundColor = color;
+    }
+  </script>
+</head>
+<body class="min-h-screen bg-primary-box flex justify-center items-center">
+
+  <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+    <div class="bg-red-300 p-4 rounded-md shadow-md cursor-pointer" onclick="changeBackgroundColor('#430E14')">
+      Box 1 (Dark Red)
+    </div>
+    <div class="bg-pink-300 p-4 rounded-md shadow-md cursor-pointer" onclick="changeBackgroundColor('#D5345A')">
+      Box 2 (Pink)
+    </div>
+    <div class="bg-indigo-400 p-4 rounded-md shadow-md cursor-pointer" onclick="changeBackgroundColor('#1C0221')">
+      Box 3 (Indigo)
+    </div>
+  </div>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+    .font-handwritten {
+      font-family: 'Rock Salt', cursive;
+    }
+
+    .arrow-down {
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+      transform: rotate(45deg);
+    }
+
+    .bg-arrow-red {
+      background-color: #BA1F33;
+    }
+  </style>
+
+
+</body>
+</html>
