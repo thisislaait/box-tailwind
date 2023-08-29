@@ -6,7 +6,7 @@ function changeBackgroundColor (color) {
   const textElement = document.querySelector('#text');
   const arrowElement = document.querySelector('#arrow');
   textElement.style.color = isLightColor ? 'black' : 'white';
-  arrowElement.style.color = isLightColor ? 'black' : 'white';
+  arrowElement.style.borderColor = isLightColor ? 'black' : 'white';
 
 function isLight(color) {
   const r = parseInt(color.slice(1, 3), 16);
