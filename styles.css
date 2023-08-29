@@ -4,8 +4,9 @@
   font-family: 'Gochi Hand', cursive;
 }
 
-.arrrow {
-  color: black;
-  stroke: black;
-  border: 2px solid;
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  padding: 3px;
+  display: inline-block;
 }
