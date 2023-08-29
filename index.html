@@ -6,20 +6,14 @@
   <title>Colorful Box Challenge</title>
   <!-- Include the Tailwind CSS CDN link -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-    .primary-box {
-      background-color: #410b13; /* Primary Color: Dark Red */
-    }
-  </style>
-  <script>function changeBackgroundColor (color) {
-    document.body.style.backgroundColor = color;
-  }
-  </script>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body class="min-h-screen bg-primary-box flex justify-center items-center">
 
-  <p>Click to change<br class="md:hidden"> background color</p>
-  <div></div>
+  <div class="text">
+    <p class="text-center md:text-left md:absolute md:bottom-0 md:left-0 md:mb-4 lg:text-sm font-handwritten">Click to change<br class="md:hidden"> background color</p>
+    <div></div>
+  </div>
   <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
     <div class="bg-red-300 p-4 rounded-md shadow-md cursor-pointer" onclick="changeBackgroundColor ('#551117')">
       You are Worthy
@@ -32,7 +26,7 @@
     </div>
   </div>
   
-
+  <script src="script.js"></script>
 </body>
 </html>
 
